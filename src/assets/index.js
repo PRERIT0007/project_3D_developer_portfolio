@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import angular from "./tech/angular.png";
+import ionic from "./tech/ionic.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  angular,
+  ionic,
 };

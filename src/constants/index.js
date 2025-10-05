@@ -8,21 +8,19 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   meta,
-  starbucks,
   tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  angular,
+  ionic,
 } from "../assets";
 
 export const navLinks = [
@@ -42,11 +40,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile App Developer",
     icon: mobile,
   },
   {
@@ -54,7 +52,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "3D Developer",
     icon: creator,
   },
 ];
@@ -77,12 +75,16 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Angular",
+    icon: angular,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Ionic",
+    icon: ionic,
   },
   {
     name: "Tailwind CSS",
@@ -104,67 +106,45 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "SDE – 1",
+    company_name: "Hidden Talent",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on two client projects, actively developing and maintaining production-based products.",
+      "Responsible for frontend development using Angular framework and TypeScript.",
+      "Developed an Ionic app, gaining hands-on experience in mobile application development.",
+      "Utilized MongoDB for database management.",
+      "Debugged and identified bugs, communicated with service clients, and fixed product issues.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "MERN Stack Web Developer Intern",
+    company_name: "Learn And Build",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "July 2023 - Sept 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and implemented a modern and user-friendly interface for the website.",
+      "Successfully integrated feature focused on sharing files by generating URL and sharing with the person who need that file.",
+      "Implemented a seamless way to upload and share file through URl.",
+    ],
+  },
+  {
+    title: "Data Science Intern",
+    company_name: "Dzone Private Limited",
+    icon: tesla,
+    iconBg: "#383E56",
+    date: "July 2022 - Aug 2022",
+    points: [
+      "Conducted comprehensive data analysis to understand patterns and trends in diabetes-related datasets, laying the foundation for model development.",
+      "Implemented data preprocessing techniques including cleaning, normalization, and feature engineering to prepare raw healthcare data for predictive modeling.",
+      "Iteratively optimized model performance through experimentation with various machine learning algorithms.",
     ],
   },
 ];
@@ -198,12 +178,71 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Library Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Designed and implemented a relational database schema for a library management system, ensuring efficient organization and retrieval of book inventory, member information, and transaction records. Developed SQL queries and stored procedures to enable seamless interaction with the database, enhancing user experience and streamlining library operations.",
     tags: [
       {
-        name: "react",
+        name: "sql",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "database",
+        color: "green-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/prerit0007",
+  },
+  {
+    name: "Weather App",
+    description:
+      "Developed a weather app using HTML, CSS, and JavaScript to display real-time weather data. Implemented a user-friendly interface with responsive design for seamless user experience across devices, and integrated with a weather API to provide accurate and up-to-date weather forecasts.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/prerit0007",
+  },
+  {
+    name: "Daksh (Client Project)",
+    description:
+      "Developed and maintained modules using Angular, TypeScript, and Ionic, ensuring scalable and high-performance UI. Worked on complex components like Assign Rate in HXP, gaining hands-on experience in debugging, optimization, and cross-team collaboration. Focused on delivering within tight timelines while maintaining quality standards.",
+    tags: [
+      {
+        name: "angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ionic",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/prerit0007",
+  },
+    {
+    name: "HXP (Client Project)",
+    description:
+      "Collaborated with the team to implement reusable Angular components to speed up development and improve maintainability. Integrated MongoDB and SQL databases for data storage, ensuring efficient data handling and retrieval. Enhanced UI/UX through responsive designs and performance tuning for seamless client usage.",
+    tags: [
+      {
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
@@ -211,54 +250,37 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "sql",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/prerit0007",
   },
   {
-    name: "Job IT",
+    name: "FBO (Client Project)",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Contributed to full-stack development with Angular, TypeScript, MongoDB, and SQL. Actively communicated with service clients, identified bugs, and resolved issues in production-based environments. Improved product stability and client satisfaction by ensuring timely delivery of fixes and features.",
     tags: [
       {
-        name: "react",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mongodb",
         color: "pink-text-gradient",
+      },
+       {
+        name: "sql",
+        color: "blue-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/prerit0007",
   },
 ];
 
