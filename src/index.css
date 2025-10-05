@@ -13,31 +13,6 @@
   color-scheme: dark;
 }
 
-/* Prevent white flash on mobile by ensuring body has dark background immediately */
-html,
-body {
-  background-color: #050816;
-  min-height: 100vh;
-}
-
-/* Improve hero pattern loading */
-.bg-hero-pattern {
-  background-color: #050816; /* Fallback dark background */
-  background-image: url('/src/assets/herobg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* Mobile optimization for hero pattern */
-@media (max-width: 768px) {
-  .bg-hero-pattern {
-    background-attachment: scroll; /* Better performance on mobile */
-    background-size: cover;
-  }
-}
-
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

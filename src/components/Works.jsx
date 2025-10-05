@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -16,93 +16,54 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  const cardContent = (
-    <div className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
-      <div className='relative w-full h-[230px] bg-black-200 rounded-2xl overflow-hidden'>
-        <img
-          src={image}
-          alt={name || 'project_image'}
-          className={`w-full h-full object-cover rounded-2xl transition-opacity duration-300 ${
-            imageLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-          loading="lazy"
-          onLoad={() => setImageLoaded(true)}
-          onError={(e) => {
-            e.target.src = '/src/assets/web.png'; // Fallback image
-            setImageLoaded(true);
-          }}
-        />
-
-        {!imageLoaded && (
-          <div className='absolute inset-0 flex items-center justify-center bg-tertiary rounded-2xl'>
-            <div className='text-white text-sm'>Loading...</div>
-          </div>
-        )}
-
-        {source_code_link && (
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-        )}
-      </div>
-
-      <div className='mt-5'>
-        <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-        <p className='mt-2 text-secondary text-[14px] leading-[20px]'>{description}</p>
-      </div>
-
-      <div className='mt-4 flex flex-wrap gap-2'>
-        {tags && tags.map((tag) => (
-          <p
-            key={`${name}-${tag.name}`}
-            className={`text-[14px] ${tag.color}`}
-          >
-            #{tag.name}
-          </p>
-        ))}
-      </div>
-    </div>
-  );
-
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {isMobile ? (
-        // Mobile: No tilt effect to prevent rendering issues
-        cardContent
-      ) : (
-        // Desktop: With tilt effect
-        <Tilt
-          tiltMaxAngleX={45}
-          tiltMaxAngleY={45}
-          scale={1.1}
-          transitionSpeed={450}
-        >
-          {cardContent}
-        </Tilt>
-      )}
+      <Tilt
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1.1}
+        transitionSpeed={450}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      >
+        <div className='relative w-full h-[230px]'>
+          <img
+            src={image}
+            alt='project_image'
+            className='w-full h-full object-cover rounded-2xl'
+          />
+
+          {source_code_link && (
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
+
+        <div className='mt-4 flex flex-wrap gap-2'>
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
     </motion.div>
   );
 };
@@ -128,16 +89,10 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7 justify-center'>
-        {projects && projects.length > 0 ? (
-          projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))
-        ) : (
-          <div className='text-white text-center'>
-            <p>Projects are loading...</p>
-          </div>
-        )}
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
       </div>
     </>
   );

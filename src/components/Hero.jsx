@@ -1,22 +1,13 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Ensure component is marked as loaded after mount
-    const timer = setTimeout(() => setIsLoaded(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <section className={`relative w-full h-screen mx-auto bg-primary`} style={{ backgroundColor: '#050816' }}>
+    <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -24,31 +15,15 @@ const Hero = () => {
         </div>
 
         <div className='flex-1'>
-          <motion.h1
-            className={`${styles.heroHeadText} text-white`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Prerit</span>
-          </motion.h1>
-          <motion.p
-            className={`${styles.heroSubText} mt-2 text-white-100`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I build full-stack web and <br className='sm:block hidden' />
             mobile applications.
-          </motion.p>
+          </p>
 
-          {/* LinkedIn Connection Button */}
-          <motion.div
-            className='mt-4 sm:mt-8 flex justify-start max-w-xs'
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
+          <div className='mt-4 sm:mt-8 flex justify-start max-w-xs'>
             <motion.a
               href='https://www.linkedin.com/in/prerit-goyal07/'
               target='_blank'
@@ -62,13 +37,13 @@ const Hero = () => {
               </svg>
               <span className='whitespace-nowrap'>7.5K+ Connections</span>
             </motion.a>
-          </motion.div>
+          </div>
         </div>
       </div>
 
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
