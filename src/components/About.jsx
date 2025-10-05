@@ -35,6 +35,77 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
+const LinkedInStrengthCard = () => (
+  <motion.div
+    variants={fadeIn("up", "spring", 0.1, 0.75)}
+    className='w-full bg-tertiary p-6 rounded-2xl border border-secondary/20'
+  >
+    <div className='flex flex-col sm:flex-row items-center justify-between gap-6'>
+      <div className='flex-1'>
+        <h3 className='text-white text-[20px] font-bold mb-2'>
+          LinkedIn Professional Network
+        </h3>
+        <p className='text-secondary text-[14px] leading-[20px]'>
+          Building meaningful professional connections has been key to my growth.
+          With{" "}
+          <span className='text-[#915EFF] font-semibold'>7.5K+ LinkedIn connections</span>,
+          I actively engage with the developer community, share insights, and stay updated
+          with industry trends. This network has helped me learn from experienced professionals
+          and collaborate on innovative projects.
+        </p>
+      </div>
+      <div className='flex flex-col gap-3'>
+        <a
+          href='https://www.linkedin.com/in/prerit-goyal07/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-[#0077B5] hover:bg-[#005885] transition-colors duration-300 text-white px-6 py-3 rounded-lg font-medium text-center'
+        >
+          Connect on LinkedIn
+        </a>
+        <div className='text-center'>
+          <span className='text-[#915EFF] text-[24px] font-bold'>7.5K+</span>
+          <p className='text-secondary text-[12px]'>Connections</p>
+        </div>
+      </div>
+    </div>
+  </motion.div>
+);
+
+const TopmateCard = () => (
+  <motion.div
+    variants={fadeIn("up", "spring", 0.2, 0.75)}
+    className='w-full bg-tertiary p-6 rounded-2xl border border-secondary/20 mt-6'
+  >
+    <div className='flex flex-col sm:flex-row items-center justify-between gap-6'>
+      <div className='flex-1'>
+        <h3 className='text-white text-[20px] font-bold mb-2'>
+          Free 1-on-1 Consultations
+        </h3>
+        <p className='text-secondary text-[14px] leading-[20px] mb-3'>
+          I help clients build and optimize web and mobile applications using Angular, React, Node.js, and Flutter.
+          Currently working at Hidden Talent, I bring SDE-1 experience and deliver high-quality,
+          scalable solutions tailored to client needs.
+        </p>
+        <p className='text-[#915EFF] text-[14px] font-semibold'>
+          💡 Free sessions available - Let's discuss your project ideas!
+        </p>
+      </div>
+      <div className='flex flex-col gap-3'>
+        <a
+          href='https://topmate.io/prerit_goyal10?utm_campaign=Page_Ready&utm_medium=popup&utm_source=topmate'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-gradient-to-r from-[#915EFF] to-[#7B46D6] hover:from-[#7B46D6] hover:to-[#915EFF] transition-all duration-300 text-white px-6 py-3 rounded-lg font-medium text-center'
+        >
+          Book Free Session
+        </a>
+        <p className='text-secondary text-[12px] text-center'>No charge • Topmate</p>
+      </div>
+    </div>
+  </motion.div>
+);
+
 const About = () => {
   return (
     <>
@@ -49,6 +120,12 @@ const About = () => {
       >
         I'm a passionate and driven software developer with experience in building and maintaining production-grade applications. My expertise lies in frontend development with Angular and TypeScript, and I have hands-on experience with mobile app development using Ionic. I'm a quick learner and a collaborative team player, dedicated to delivering high-quality, scalable, and user-friendly solutions. Let's connect and create something amazing together!
       </motion.p>
+
+      {/* LinkedIn Strength and Topmate sections */}
+      <div className='mt-10'>
+        <LinkedInStrengthCard />
+        <TopmateCard />
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
