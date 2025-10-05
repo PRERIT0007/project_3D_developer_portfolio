@@ -299,21 +299,29 @@ const projects = [
     image: hxp_platform,
   },
   {
-    name: "Weather App",
+    name: "Weather Application",
     description:
-      "Developed a weather app using HTML, CSS, and JavaScript to display real-time weather data. Implemented a user-friendly interface with responsive design for seamless user experience across devices, and integrated with a weather API to provide accurate and up-to-date weather forecasts.",
+      "A comprehensive weather application built with modern web technologies featuring real-time weather data integration, location-based forecasting, and interactive weather maps. The application provides detailed weather information including temperature, humidity, wind speed, precipitation, and 7-day forecasts. Implemented responsive design with dynamic weather animations, geolocation services, and optimized API calls for enhanced user experience across all devices.",
     tags: [
       {
-        name: "html",
+        name: "html5",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "css3",
         color: "green-text-gradient",
       },
       {
         name: "javascript",
         color: "pink-text-gradient",
+      },
+      {
+        name: "weather-api",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "responsive-design",
+        color: "green-text-gradient",
       },
     ],
     image: weather_platform,
@@ -322,14 +330,26 @@ const projects = [
   {
     name: "Library Management System",
     description:
-      "Designed and implemented a relational database schema for a library management system, ensuring efficient organization and retrieval of book inventory, member information, and transaction records. Developed SQL queries and stored procedures to enable seamless interaction with the database, enhancing user experience and streamlining library operations.",
+      "A full-stack library management system built with Angular frontend and Node.js backend. Features comprehensive book inventory management, member registration and authentication, book issuing/returning workflows, fine calculation system, advanced search and filtering capabilities, real-time availability tracking, and detailed reporting dashboards. Implemented RESTful APIs, role-based access control, and automated notification system for due dates and renewals.",
     tags: [
       {
-        name: "sql",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "database",
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
         color: "green-text-gradient",
       },
     ],
