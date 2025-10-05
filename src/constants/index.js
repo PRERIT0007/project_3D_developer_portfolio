@@ -191,20 +191,111 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Library Management System",
+    name: "Velora (Event Management Platform)",
     description:
-      "Designed and implemented a relational database schema for a library management system, ensuring efficient organization and retrieval of book inventory, member information, and transaction records. Developed SQL queries and stored procedures to enable seamless interaction with the database, enhancing user experience and streamlining library operations.",
+      "A comprehensive event management platform featuring community and group management, event planning and organization tools, and vendor proposal management. Built with modern web technologies to streamline event operations from registration to post-event analytics through an intuitive dashboard interface.",
     tags: [
       {
-        name: "sql",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "database",
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "aws-lambda",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "syncfusion",
         color: "green-text-gradient",
       },
     ],
-    image: library_platform,
+    image: velora_platform,
+    source_code_link: "https://github.com/prerit0007",
+  },
+  {
+    name: "FBO Master (Aviation Management System)",
+    description:
+      "A sophisticated Fixed Base Operator (FBO) management system for aviation industry. Features include instructor & pilot management, flight & booking management, fuel & inventory tracking, data analytics and reporting, document management, and comprehensive help & support modules for seamless aviation operations.",
+    tags: [
+      {
+        name: "angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "syncfusion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: fbo_platform,
+    source_code_link: "https://github.com/prerit0007",
+  },
+  {
+    name: "Daksh (Employee Management System)",
+    description:
+      "An intelligent employee management platform with attendance tracking through quick check-in/check-out systems, work optimization tools for enhanced productivity, insightful reports for performance analysis, and real-time location tracking to ensure accurate field visibility and workforce management.",
+    tags: [
+      {
+        name: "ionic",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "syncfusion",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: daksh_platform,
+    source_code_link: "https://github.com/prerit0007",
+  },
+  {
+    name: "HXP (Human Experience Platform)",
+    description:
+      "A comprehensive HR management platform covering the complete employee lifecycle including recruitment & onboarding, performance management, employee management, learning & development, time & attendance, career progression, rewards & recognition, financial analytics, compensation & benefits, offboarding & separation, and employee engagement & surveys with dedicated help & support.",
+    tags: [
+      {
+        name: "angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "syncfusion",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+    ],
+    image: hxp_platform,
     source_code_link: "https://github.com/prerit0007",
   },
   {
@@ -229,91 +320,20 @@ const projects = [
     source_code_link: "https://github.com/prerit0007",
   },
   {
-    name: "Daksh (Client Project)",
+    name: "Library Management System",
     description:
-      "Developed and maintained modules using Angular, TypeScript, and Ionic, ensuring scalable and high-performance UI. Worked on complex components like Assign Rate in HXP, gaining hands-on experience in debugging, optimization, and cross-team collaboration. Focused on delivering within tight timelines while maintaining quality standards.",
+      "Designed and implemented a relational database schema for a library management system, ensuring efficient organization and retrieval of book inventory, member information, and transaction records. Developed SQL queries and stored procedures to enable seamless interaction with the database, enhancing user experience and streamlining library operations.",
     tags: [
       {
-        name: "angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ionic",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: daksh_platform,
-    source_code_link: "https://github.com/prerit0007",
-  },
-    {
-    name: "HXP (Client Project)",
-    description:
-      "Collaborated with the team to implement reusable Angular components to speed up development and improve maintainability. Integrated MongoDB and SQL databases for data storage, ensuring efficient data handling and retrieval. Enhanced UI/UX through responsive designs and performance tuning for seamless client usage.",
-    tags: [
-      {
-        name: "angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "sql",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: hxp_platform,
-    source_code_link: "https://github.com/prerit0007",
-  },
-  {
-    name: "FBO (Client Project)",
-    description:
-      "Contributed to full-stack development with Angular, TypeScript, MongoDB, and SQL. Actively communicated with service clients, identified bugs, and resolved issues in production-based environments. Improved product stability and client satisfaction by ensuring timely delivery of fixes and features.",
-    tags: [
-      {
-        name: "angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-       {
         name: "sql",
         color: "blue-text-gradient",
       },
-    ],
-    image: fbo_platform,
-    source_code_link: "https://github.com/prerit0007",
-  },
-  {
-    name: "Velora (Personal Project)",
-    description:
-      "A modern web application built with cutting-edge technologies. Features responsive design, intuitive user interface, and seamless user experience. Implemented best practices for performance optimization and cross-browser compatibility.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
+        name: "database",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: velora_platform,
+    image: library_platform,
     source_code_link: "https://github.com/prerit0007",
   },
 ];
