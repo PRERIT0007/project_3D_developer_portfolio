@@ -21,6 +21,19 @@ import {
   threejs,
   angular,
   ionic,
+  daksh,
+  daksh_platform,
+  fbo,
+  fbo_platform,
+  hxp,
+  hxp_platform,
+  library_platform,
+  velora,
+  velora_platform,
+  weather_platform,
+  ht,
+  dzone,
+  learn_build,
 } from "../assets";
 
 export const navLinks = [
@@ -112,7 +125,7 @@ const experiences = [
   {
     title: "SDE – 1",
     company_name: "Hidden Talent",
-    icon: shopify,
+    icon: ht,
     iconBg: "#383E56",
     date: "June 2024 - Present",
     points: [
@@ -126,7 +139,7 @@ const experiences = [
   {
     title: "MERN Stack Web Developer Intern",
     company_name: "Learn And Build",
-    icon: meta,
+    icon: learn_build,
     iconBg: "#E6DEDD",
     date: "July 2023 - Sept 2023",
     points: [
@@ -138,7 +151,7 @@ const experiences = [
   {
     title: "Data Science Intern",
     company_name: "Dzone Private Limited",
-    icon: tesla,
+    icon: dzone,
     iconBg: "#383E56",
     date: "July 2022 - Aug 2022",
     points: [
@@ -191,7 +204,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: carrent,
+    image: library_platform,
     source_code_link: "https://github.com/prerit0007",
   },
   {
@@ -212,7 +225,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: weather_platform,
     source_code_link: "https://github.com/prerit0007",
   },
   {
@@ -233,7 +246,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: daksh_platform,
     source_code_link: "https://github.com/prerit0007",
   },
     {
@@ -254,7 +267,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: hxp_platform,
     source_code_link: "https://github.com/prerit0007",
   },
   {
@@ -279,7 +292,28 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: jobit,
+    image: fbo_platform,
+    source_code_link: "https://github.com/prerit0007",
+  },
+  {
+    name: "Velora (Personal Project)",
+    description:
+      "A modern web application built with cutting-edge technologies. Features responsive design, intuitive user interface, and seamless user experience. Implemented best practices for performance optimization and cross-browser compatibility.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: velora_platform,
     source_code_link: "https://github.com/prerit0007",
   },
 ];
