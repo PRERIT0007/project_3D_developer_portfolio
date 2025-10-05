@@ -217,7 +217,6 @@ const projects = [
       },
     ],
     image: velora_platform,
-    source_code_link: "https://github.com/prerit0007",
   },
   {
     name: "FBO Master (Aviation Management System)",
@@ -242,7 +241,6 @@ const projects = [
       },
     ],
     image: fbo_platform,
-    source_code_link: "https://github.com/prerit0007",
   },
   {
     name: "Daksh (Employee Management System)",
@@ -267,7 +265,6 @@ const projects = [
       },
     ],
     image: daksh_platform,
-    source_code_link: "https://github.com/prerit0007",
   },
   {
     name: "HXP (Human Experience Platform)",
@@ -296,7 +293,6 @@ const projects = [
       },
     ],
     image: hxp_platform,
-    source_code_link: "https://github.com/prerit0007",
   },
   {
     name: "Weather App",
