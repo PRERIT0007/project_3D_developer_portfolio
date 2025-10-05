@@ -59,13 +59,23 @@ const ComputersCanvas = () => {
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{
+        preserveDrawingBuffer: true,
+        alpha: true,
+        antialias: true
+      }}
+      style={{ background: 'transparent' }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          enablePan={false}
+          enableRotate={true}
+          autoRotate={false}
+          autoRotateSpeed={0.5}
+          maxPolarAngle={Math.PI}
+          minPolarAngle={0}
+          enableDamping={true}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
